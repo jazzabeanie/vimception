@@ -1,21 +1,7 @@
-##Vimception: A presentation about vim in vim
-
-To get started enter a title for your note above. When you’re ready to save
-your note just use Vim’s :write or :update commands, a filename will be picked
-automatically based on the title.
-
-                                    * * *
-
-The notes plug-in comes with self hosting documentation. To jump to these notes
-position your cursor on the highlighted name and press ‘gf’ in normal mode:
-
- • Note taking syntax
- • Note taking commands
-
+#Vimception
 
 ###what is vim?
  - A text editor
-" }}}
 ###why vim?
  - speed of usage
  - speed of thinking (muscle memory)
@@ -23,13 +9,14 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
     - IDE
     - terminal pager (used by less, man, etc)
     - commande line
-```
-**~/.inputrc**
-```
+
+####~/.inputrc
+{{{sh
 $include /etc/inputrc
 set completion-ignore-case On
 set editing-mode vi set keymap vi-command
 
+# many more commands to be found here: http://linux.about.com/library/cmd/blcmdl3_readline.htm
 $if mode=vi
 
   set keymap vi-command
@@ -42,10 +29,11 @@ $if mode=vi
   Control-p: previous-history
   "jk": vi-movement-mode
 $endif
-```
-```
+}}}
     - browser (vimium)
- - customisability
+ - customisability and super mega rad pluggins
+   • vim-gitgutter
+   • eg2
  - macros
  - speed of updates
     - including neovim
@@ -61,7 +49,14 @@ $endif
  - clipboard
 ###example .vimrc
 example .vimrc
+
 ###vimscript
 vimscript
 
+####Footer:
 Written using vim-note (https://github.com/xolox/vim-notes)
+
+save with :update
+see docs with ‘gf’ in normal mode:
+ • Note taking syntax
+ • Note taking commands
