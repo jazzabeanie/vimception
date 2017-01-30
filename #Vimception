@@ -1,14 +1,36 @@
 #Vimception
 
-###what is vim?
- - A text editor
-###why vim?
- - speed of usage
- - speed of thinking (muscle memory)
- - cross over to:
-    - IDE
-    - terminal pager (used by less, man, etc)
-    - commande line
+###what is Vim?
+ • Vi IMproved - a free, opensource text editor for unix. 
+ • Vim aims to minimize the number of keystrokes.
+ • Base on vi which was designed to be used over slow terminals.
+ • First released publicly in 1991. (Vi released 1976)
+###why use a command line text editor (such as Vim or Emacs?
+ • Vi - on all POSIX compliant systems
+    ◦ If you know Vim you can stumble you way around Vi
+ • light on RAM
+    ◦ Raw - 2MB
+    ◦ With my plugins - 4MB
+ • speed of usage
+ • speed of thinking (muscle memory)
+ • cross over to:
+    ◦ IDE
+    ◦ terminal pager (used by less, man, etc)
+    ◦ commande line
+    ◦ browser (Vimium)
+ • customisability and super mega rad pluggins
+    ◦ vim-gitgutter
+    ◦ autopairs
+    ◦ ctrl-p
+    ◦ vim-surround 
+    ◦ language specific pluging
+ • macros
+ • speed of updates
+    ◦ neovim
+###why you wouldn't use vim
+ • Editing files with really really long lines
+ • You can't touch type
+ • ?Emacs style shortcuts are enabled in the commandline by default?
 
 ####~/.inputrc
 {{{sh
@@ -30,28 +52,39 @@ $if mode=vi
   "jk": vi-movement-mode
 $endif
 }}}
-    - browser (vimium)
- - customisability and super mega rad pluggins
-   • vim-gitgutter
-   • eg2
- - macros
- - speed of updates
-    - including neovim
 
 ###how to get started
- - movement keys
-   - <esc><c-c>iv, hjkl
-   - <c-d><c-u> w b $ ^ {}
-   - /?np
-   - fF
- - operator pending keys:
-   - dc
- - clipboard
+ • apparently vim tutor (http://www.openvim.com/tutorial.html) is a good starting point
+ • Peepcode's Smash into Vim (https://www.pluralsight.com/courses/smash-into-vim)
+ • this is the order that I would learn thing as a beginner
+    ◦ movement keys and getting in and out of insert mode
+       ▸ <esc><c-c>iv, hjkl (disable arrow keys if you have to)
+       ▸ <c-d><c-u> w b $ ^ {} (disable hjkl if you have to)
+       ▸ /?np
+       ▸ fFtT;
+    ◦ operator pending keys:
+       ▸ dc
+    ◦ clipboard
+    ◦ remap jk to <esc>
+
+###how to get fast
+ • Disable crutch keys (arrows, backspace, or any other key you use when you could use something faster)
+    ◦ If you find yourself pressing a key multiple times in a row, or holding a key down, you're probably not working as efficiently as you could (disable holding keys down if you have to)
+ • Get faster a touch typing
+    ◦ enable vimium in the browser and enable the option "Use the link's name and numbers for link-hint filtering"
 ###example .vimrc
 example .vimrc
 
 ###vimscript
-vimscript
+http://learnvimscriptthehardway.stevelosh.com/
+
+###tips
+ • shell loops done with vim:
+    ◦ generate the list `ls | vim -`
+    ◦ transform the list into commands (regex is very useful here)
+    ◦ run it `:w ! sh`
+ • modeline (see `:help modeline`)
+    ◦ Use this for settings specific to individual files, eg, `// vim:nomodifiable`
 
 ####Footer:
 Written using vim-note (https://github.com/xolox/vim-notes)
@@ -60,3 +93,4 @@ save with :update
 see docs with ‘gf’ in normal mode:
  • Note taking syntax
  • Note taking commands
+ •
