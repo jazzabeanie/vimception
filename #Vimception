@@ -66,12 +66,15 @@ $endif
        ▸ dc
     ◦ clipboard
     ◦ remap jk to <esc>
+    ◦ https://www.easysession.com/products/vim-vi-keyboard-cover
+    ◦ https://vim-adventures.com/
 
 ###how to get fast
  • Disable crutch keys (arrows, backspace, or any other key you use when you could use something faster)
     ◦ If you find yourself pressing a key multiple times in a row, or holding a key down, you're probably not working as efficiently as you could (disable holding keys down if you have to)
  • Get faster a touch typing
     ◦ enable vimium in the browser and enable the option "Use the link's name and numbers for link-hint filtering"
+
 ###example .vimrc
 example .vimrc
 
