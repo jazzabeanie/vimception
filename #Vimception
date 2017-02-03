@@ -27,6 +27,7 @@
  • macros
  • speed of updates
     ◦ neovim
+
 ###why you wouldn't use vim
  • Editing files with really really long lines
  • You can't touch type
@@ -54,40 +55,45 @@ $endif
 }}}
 
 ###how to get started
- • apparently vim tutor (http://www.openvim.com/tutorial.html) is a good starting point
- • Peepcode's Smash into Vim (https://www.pluralsight.com/courses/smash-into-vim)
- • this is the order that I would learn thing as a beginner
+ • Peepcode screencast - Smash into Vim (https://www.pluralsight.com/courses/smash-into-vim)
+ • The suggested order of addoption:
     ◦ movement keys and getting in and out of insert mode
-       ▸ <esc><c-c>iv, hjkl (disable arrow keys if you have to)
-       ▸ <c-d><c-u> w b $ ^ {} (disable hjkl if you have to)
-       ▸ /?np
-       ▸ fFtT;
+       ▸ move a little: <esc><c-c>iv, hjkl (disable arrow keys if you have to)
+       ▸ move a bit further: <c-d><c-u> w b $ ^ {}
+       ▸ jump: fFtT;
+       ▸ search: /?np
     ◦ operator pending keys:
-       ▸ dc
-    ◦ clipboard
-    ◦ remap jk to <esc>
+       ▸ delete or change stuff: dc
+    ◦ learn to use the clipboard
+    ◦ install ctrl-p with pathogen
+ • See also:
     ◦ https://www.easysession.com/products/vim-vi-keyboard-cover
     ◦ https://vim-adventures.com/
+ • I've heard good things about vim tutor (http://www.openvim.com/tutorial.html)
 
 ###how to get fast
- • Disable crutch keys (arrows, backspace, or any other key you use when you could use something faster)
-    ◦ If you find yourself pressing a key multiple times in a row, or holding a key down, you're probably not working as efficiently as you could (disable holding keys down if you have to)
  • Get faster a touch typing
-    ◦ enable vimium in the browser and enable the option "Use the link's name and numbers for link-hint filtering"
+ • Disable crutch keys (arrows, backspace, or any other key you use when you could use something faster)
+    ◦ Don't hold, or press a key multiple times in a row. (Disable these keys if you have to)
+ • install vimium extension in the chrome
+    ◦ if weak at touch typing digits, enable the option "Use the link's name and numbers for link-hint filtering"
 
 ###example .vimrc
 example .vimrc
 
-###vimscript
-http://learnvimscriptthehardway.stevelosh.com/
-
 ###tips
+ • run though the first half of learn vimscript the hard way to take your vimrc file to the next level.
+    ◦ remap jk and kj to <esc> " makes escaping easier
+    ◦ remap H to ^ and L to $ " makes end/start of line movement more intuitive.
  • shell loops done with vim:
     ◦ generate the list `ls | vim -`
     ◦ transform the list into commands (regex is very useful here)
     ◦ run it `:w ! sh`
  • modeline (see `:help modeline`)
     ◦ Use this for settings specific to individual files, eg, `// vim:nomodifiable`
+
+###vimscript
+http://learnvimscriptthehardway.stevelosh.com/
 
 ####Footer:
 Written using vim-note (https://github.com/xolox/vim-notes)
@@ -96,4 +102,3 @@ save with :update
 see docs with ‘gf’ in normal mode:
  • Note taking syntax
  • Note taking commands
- •
