@@ -1,30 +1,32 @@
 #Vimception
 
 ###what is Vim?
- • Vi IMproved - a free, opensource text editor for unix. 
+ • Vi IMproved - a free, opensource text editor for unix.
  • Vim aims to minimize the number of keystrokes.
  • Base on vi which was designed to be used over slow terminals.
  • First released publicly in 1991. (Vi released 1976)
-###why use a command line text editor (such as Vim or Emacs?
+###why use a command line text editor (such as Vim or Emacs)?
  • Vi - on all POSIX compliant systems
     ◦ If you know Vim you can stumble you way around Vi
  • light on RAM
     ◦ Raw - 2MB
     ◦ With my plugins - 4MB
- • speed of usage
- • speed of thinking (muscle memory)
+ • speed
+    ◦ No need to move your hand from the home keys - scrolling, selecting, moving the cursor
+    ◦ Changing blocks
+    ◦ repeat character, and macros
  • cross over to:
     ◦ IDE
     ◦ terminal pager (used by less, man, etc)
     ◦ commande line
     ◦ browser (Vimium)
  • customisability and super mega rad pluggins
+    ◦ vimscript
     ◦ vim-gitgutter
     ◦ autopairs
     ◦ ctrl-p
     ◦ vim-surround 
     ◦ language specific pluging
- • macros
  • speed of updates
     ◦ neovim
 
