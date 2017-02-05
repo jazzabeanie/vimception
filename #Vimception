@@ -35,6 +35,9 @@
  • You can't touch type
  • ?Emacs style shortcuts are enabled in the commandline by default?
 
+###vim mode in the terminal
+ • if you're going to use vim, it helps to set vi editing mode in the command line
+
 ####~/.inputrc
 {{{sh
 $include /etc/inputrc
@@ -47,6 +50,8 @@ $if mode=vi
   set keymap vi-command
   # these are for vi-command mode
   Control-l: clear-screen
+  "H": vi-first-print
+  "L": end-of-line
 
   set keymap vi-insert
   # these are for vi-insert mode

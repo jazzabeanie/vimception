@@ -9,13 +9,13 @@ $ curl -O https://raw.githubusercontent.com/jazzabeanie/dotfiles/master/home/.vi
 
 ### Install vim-notes
 ```bash
-$ cd ~/.vim
-$ git clone https://github.com/ctrlpvim/ctrlp.vim.git bundle/ctrlp.vim
+$ cd ~/.vim/bundle
+$ git clone https://github.com/xolox/vim-notes.git
 ```
 
 ### Put Vimception notes in vim-notes directory
 Run from root dir of this repo:
 ```bash
-ln ~/.vim/bundle/vim-notes/misc/notes/user/#Vimception
+ln -s ~/.vim/bundle/vim-notes/misc/notes/user/#Vimception
 ```
 
