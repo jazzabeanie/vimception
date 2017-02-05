@@ -19,3 +19,7 @@ Run from root dir of this repo:
 ln -s ~/.vim/bundle/vim-notes/misc/notes/user/#Vimception
 ```
 
+### Open notes
+```vim
+:Note #Vimception
+```
