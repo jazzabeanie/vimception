@@ -5,7 +5,7 @@
  • Vim aims to minimize the number of keystrokes.
  • Base on vi which was designed to be used over slow terminals.
  • First released publicly in 1991. (Vi released 1976)
-###why use a command line text editor (such as Vim or Emacs)?
+###why use Vim (or another command line text editor such as Vim or Emacs)?
  • Vi - on all POSIX compliant systems
     ◦ If you know Vim you can stumble you way around Vi
  • light on RAM
@@ -14,7 +14,8 @@
  • speed
     ◦ No need to move your hand from the home keys - scrolling, selecting, moving the cursor
     ◦ Changing blocks
-    ◦ repeat character, and macros
+    ◦ repeat action, and macros
+    ◦ a layer has been removed between your brain and the code
  • cross over to:
     ◦ IDE
     ◦ terminal pager (used by less, man, etc)
@@ -27,8 +28,11 @@
     ◦ ctrl-p
     ◦ vim-surround 
     ◦ language specific pluging
+       ▸ linting, completion, docs, etc
  • speed of updates
     ◦ neovim
+ • Bang!
+    ◦ run your test with a shortcut
 
 ###why you wouldn't use vim
  • Editing files with really really long lines
@@ -90,6 +94,7 @@ example .vimrc
 
 ###tips
  • run though the first half of learn vimscript the hard way to take your vimrc file to the next level.
+ • Useful remaps:
     ◦ remap jk and kj to <esc> " makes escaping easier
     ◦ remap H to ^ and L to $ " makes end/start of line movement more intuitive.
  • shell loops done with vim:
