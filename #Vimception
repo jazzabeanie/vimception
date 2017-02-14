@@ -1,3 +1,4 @@
+#TODO: record a screen cast of me using vim
 #Vimception
 
 ###what is Vim?
@@ -26,16 +27,17 @@
     ◦ vim-gitgutter
     ◦ autopairs
     ◦ ctrl-p
+        ignore files in setting
     ◦ vim-surround 
     ◦ language specific pluging
-       ▸ linting, completion, docs, etc
+       ▸ syntax highting, linting, completion, docs, etc
  • speed of updates
     ◦ neovim
  • Bang!
     ◦ run your test with a shortcut
 
 ###why you wouldn't use vim
- • Editing files with really really long lines
+ • Editing minified files
  • You can't touch type
  • ?Emacs style shortcuts are enabled in the commandline by default?
 
@@ -101,6 +103,7 @@ example .vimrc
     ◦ generate the list `ls | vim -`
     ◦ transform the list into commands (regex is very useful here)
     ◦ run it `:w ! sh`
+demo this
  • modeline (see `:help modeline`)
     ◦ Use this for settings specific to individual files, eg, `// vim:nomodifiable`
 
@@ -114,3 +117,9 @@ save with :update
 see docs with ‘gf’ in normal mode:
  • Note taking syntax
  • Note taking commands
+
+advantage:
+ssh into a dev box and do all coding in vim
+
+demo most things
+focus on convincing (demos will help)
