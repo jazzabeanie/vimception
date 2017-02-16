@@ -73,6 +73,7 @@ $endif
 }}}
 
 ###how to get started
+ • Remap Caps Lock to Ctrl 
  • Peepcode screencast - Smash into Vim (https://www.pluralsight.com/courses/smash-into-vim)
  • The suggested order of addoption:
     ◦ movement keys and getting in and out of insert mode
