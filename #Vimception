@@ -1,7 +1,7 @@
 #Vimception
 
-TODO: record a screen cast of me using vim
-TODO: add .inputrc and .vimrc files to repo
+Vim Demo: https://youtu.be/WyeNmUMZ7gY (press gx to open)
+TODO: add .vimrc files to repo
 
 ###what is Vim?
  • "Vim is a terminal text editor - basically what 90's hackers use. It's for
@@ -11,6 +11,7 @@ TODO: add .inputrc and .vimrc files to repo
  • Vim aims to minimize the number of keystrokes.
  • Base on vi which was designed to be used over slow terminals.
  • First released publicly in 1991. (Vi released 1976)
+
 ###why use Vim (or another command line text editor such as Vim or Emacs)?
  • Vi - on all POSIX compliant systems
     ◦ If you know Vim you can stumble you way around Vi
@@ -40,14 +41,16 @@ TODO: add .inputrc and .vimrc files to repo
     ◦ neovim
  • Bang!
     ◦ run your test with a shortcut
+       ▸ put this in your .vimrc in the javascript autogroup and press `\t` to test the current file: `nnoremap <localleader>t :!npm test %1`
+ • SSH into a dev box and do all coding in Vim
 
-###why you wouldn't use vim
- • Editing minified files
+
+###why you wouldn't use Vim
  • You can't touch type
- • ?Emacs style shortcuts are enabled in the commandline by default?
+ • You prefer Emacs
 
 ###vi mode in the terminal
- • if you're going to use vim, it helps to set vi editing mode in the command line
+ • if you're going to use Vim, it helps to set vi editing mode in the command line
 
 ####~/.inputrc
 {{{sh
@@ -75,7 +78,6 @@ $endif
 
 ###how to get started
  • Remap Caps Lock to Ctrl 
- • Peepcode screencast - Smash into Vim (https://www.pluralsight.com/courses/smash-into-vim)
  • The suggested order of addoption:
     ◦ movement keys and getting in and out of insert mode
        ▸ move a little: <esc><c-c>iv, hjkl (disable arrow keys if you have to)
@@ -86,31 +88,33 @@ $endif
        ▸ delete or change stuff: dc
     ◦ learn to use the clipboard
     ◦ install ctrl-p with pathogen
- • See also:
-    ◦ https://www.easysession.com/products/vim-vi-keyboard-cover
-    ◦ https://vim-adventures.com/
- • I've heard good things about vim tutor (http://www.openvim.com/tutorial.html)
+ • Peepcode screencast - Smash into Vim (https://www.pluralsight.com/courses/smash-into-vim)
+ • http://www.openvim.com/tutorial.html
+ • https://vim-adventures.com/
+ • https://www.easysession.com/products/vim-vi-keyboard-cover
 
 ###how to get fast
- • Get faster a touch typing
+ • Get better at touch typing
+    ◦ Put your weakest characters in your passwords
  • Disable crutch keys (arrows, backspace, or any other key you use when you could use something faster)
-    ◦ Don't hold, or press a key multiple times in a row. (Disable these keys if you have to)
+    ◦ Don't hold, or press a key multiple times in a row (remap these keys to <nop> if you have to)
  • install vimium extension in the chrome
     ◦ if weak at touch typing digits, enable the option "Use the link's name and numbers for link-hint filtering"
 
 ###example .vimrc
-example .vimrc
+~/.vimrc
 
 ###tips
  • run though the first half of learn vimscript the hard way to take your vimrc file to the next level.
  • Useful remaps:
     ◦ remap jk and kj to <esc> " makes escaping easier
     ◦ remap H to ^ and L to $ " makes end/start of line movement more intuitive.
- • shell loops done with vim:
+ • shell loops done with Vim:
     ◦ generate the list `ls | vim -`
     ◦ transform the list into commands (regex is very useful here)
+       ▸ `%s/^\(.*\)$/cp \1 prepend_\1/g` for example TODO: test this
     ◦ run it `:w ! sh`
-demo this
+    ◦ you could also pipe into vim to debug shell loops
  • modeline (see `:help modeline`)
     ◦ Use this for settings specific to individual files, eg, `// vim:nomodifiable`
 
@@ -119,14 +123,12 @@ http://learnvimscriptthehardway.stevelosh.com/
 
 ####Footer:
 Written using vim-note (https://github.com/xolox/vim-notes)
+View this repo in github (https://github.com/jazzabeanie/vimception)
 
 save with :update
 see docs with ‘gf’ in normal mode:
  • Note taking syntax
  • Note taking commands
-
-advantage:
-ssh into a dev box and do all coding in vim
 
 demo most things
 focus on convincing (demos will help)
