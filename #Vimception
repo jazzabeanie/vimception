@@ -49,7 +49,7 @@ TODO: add .vimrc files to repo
  • You can't touch type
  • You prefer Emacs
  • You are have an extremly urgent project due in 2 weeks
- • Status quo bias in effect
+ • Status quo bias in effect - consider the reversal test
 
 ###vi mode in the terminal
  • if you're going to use Vim, it helps to set vi editing mode in the command line
