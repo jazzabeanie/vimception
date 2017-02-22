@@ -1,10 +1,15 @@
 #Vimception
 
-Vim Demo: https://youtu.be/WyeNmUMZ7gY (press gx to open)
+###intro
+ • Hello, I'm Jared
+ • Who's used Vim?
+    ◦ Who's a complete beginner?
+    ◦ Who know how to use Vim but doesn't?
+    ◦ Who uses Vim or Emacs all the time?
+ • Vim Demo: https://youtu.be/WyeNmUMZ7gY (press gx to open)
 
 ###what is Vim?
- • "Vim is a terminal text editor - basically what 90's hackers use. It's for
-    autistic savants and no-one else" 
+ • "Vim is a terminal text editor - basically what 90's hackers use. It's for autistic savants and no-one else" 
     — the general concensus on Vim to non-users.
  • What vim users think: http://www.vim.org/images/0xbabaf000l.png
  • Vi IMproved - a free, opensource text editor for unix.
@@ -13,33 +18,33 @@ Vim Demo: https://youtu.be/WyeNmUMZ7gY (press gx to open)
  • First released publicly in 1991. (Vi released 1976)
 
 ###why use Vim (or another command line text editor such as Vim or Emacs)?
- • Vi - on all POSIX compliant systems
-    ◦ If you know Vim you can stumble you way around Vi
- • light on RAM
-    ◦ Raw - 2MB
-    ◦ With my plugins - 4MB
+ • vi - on all posix compliant systems
+    ◦ if you know vim you can stumble you way around vi
+ • light on ram
+    ◦ raw - 2mb
+    ◦ with my plugins - 4mb
  • speed
-    ◦ No need to move your hand from the home keys - scrolling, selecting, moving the cursor
-    ◦ Changing blocks
+    ◦ no need to move your hand from the home keys - scrolling, selecting, moving the cursor
+    ◦ changing blocks
     ◦ repeat action, and macros
     ◦ a layer has been removed between your brain and the code
  • cross over to:
-    ◦ IDE
+    ◦ ide
     ◦ terminal pager (used by less, man, etc)
-    ◦ commande line
-    ◦ browser (Vimium)
- • customisability and super mega rad pluggins
+    ◦ command line
+    ◦ browser (vimium)
+ • customisability
     ◦ vimscript
     ◦ vim-gitgutter
     ◦ autopairs
     ◦ ctrl-p
-        ignore files in setting
+       ▸ ignore files in setting
     ◦ vim-surround 
     ◦ language specific pluging
        ▸ syntax highting, linting, completion, docs, etc
  • speed of updates
     ◦ neovim
- • Bang!
+ • bang!
     ◦ run your test with a shortcut
        ▸ put this in your .vimrc in the javascript autogroup and press `\t` to test the current file: `nnoremap <localleader>t :!npm test %1`
  • SSH into a dev box and do all coding in Vim
@@ -77,6 +82,7 @@ $if mode=vi
   "jk": vi-movement-mode
 $endif
 }}}
+
 
 ###how to get started
  • Remap Caps Lock to Ctrl 
