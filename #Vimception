@@ -82,11 +82,12 @@ $endif
  • Remap Caps Lock to Ctrl 
  • The suggested order of addoption:
     ◦ movement keys and getting in and out of insert mode
-       ▸ move a little: <esc><c-c>iv, hjkl (disable arrow keys if you have to)
+       ▸ move a little: <esc><c-c>ia, hjkl (disable arrow keys if you have to)
        ▸ move a bit further: <c-d><c-u> w b $ ^ {}
        ▸ jump: fFtT;
        ▸ search: /?np
     ◦ operator pending keys:
+       ▸ visual mode
        ▸ delete or change stuff: dc
     ◦ learn to use the clipboard
     ◦ install ctrl-p with pathogen
