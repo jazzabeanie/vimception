@@ -1,12 +1,13 @@
 #Vimception
 
+Vim Demo for the uninitiated: https://youtu.be/WyeNmUMZ7gY (press gx to open)
+
 ###intro
  • Hello, I'm Jared
  • Who's used Vim?
     ◦ Who's a complete beginner?
     ◦ Who know how to use Vim but doesn't?
     ◦ Who uses Vim or Emacs all the time?
- • Vim Demo: https://youtu.be/WyeNmUMZ7gY (press gx to open)
 
 ###what is Vim?
  • "Vim is a terminal text editor - basically what 90's hackers use. It's for autistic savants and no-one else" 
@@ -130,6 +131,9 @@ https://raw.githubusercontent.com/jazzabeanie/dotfiles/master/home/.vimrc
 
 ###vimscript
 http://learnvimscriptthehardway.stevelosh.com/
+Other unconfirmed potential resource:
+ • http://ricostacruz.com/cheatsheets/vimscript.html
+ • http://andrewscala.com/vimscript/
 
 ####Footer:
 Written using vim-note (https://github.com/xolox/vim-notes)
