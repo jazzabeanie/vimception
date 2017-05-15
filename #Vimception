@@ -47,7 +47,7 @@ Vim Demo for the uninitiated: https://youtu.be/WyeNmUMZ7gY (press gx to open)
     ◦ neovim
  • bang!
     ◦ run your test with a shortcut
-       ▸ put this in your .vimrc in the javascript autogroup and press `\t` to test the current file: `nnoremap <localleader>t :!npm test %1`
+       ▸ put this in your .vimrc in the javascript autogroup and press `\t` to test the current file: `nnoremap <localleader>t :!npm test %`
  • SSH into a dev box and do all coding in Vim
 
 
